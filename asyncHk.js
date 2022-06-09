@@ -39,7 +39,7 @@ let  email = "cakisep318@reamtv.com"; // email  adress of hackerrank
   
   async function questionsolver(page,question,answer){
    await question.click();
-     await  waitandClick(".monaco-editor.no-user-select.vs",page);
+     await  waitandClick(".monaco-editor.no-user-select.vs" ,page);
    await waitandClick(".checkbox-input",page);
    await  waitandClick(".text-area.custominput",page);
    await page.type(".text-area.custominput",answer,{delay:10});
